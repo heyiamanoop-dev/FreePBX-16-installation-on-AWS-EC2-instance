@@ -28,7 +28,7 @@ Security group
 - UDP 10000-20000 (RTP)
 
 ## 🚀 Installation Steps
-- Step 1: Install Asterisk
+### - Step 1: Install Asterisk
 FreePBX 16 works well with: Asterisk 18 or 20
 
 Bash: 
