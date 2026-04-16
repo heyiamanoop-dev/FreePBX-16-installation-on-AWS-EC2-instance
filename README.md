@@ -49,7 +49,7 @@ Start Asterisk:
 
 sudo systemctl start asterisk
 
-- STEP 2: Configure MariaDB
+### - STEP 2: Configure MariaDB
 
 sudo mysql_secure_installation
 
@@ -73,7 +73,7 @@ If not:
 sudo systemctl enable mariadb
 sudo systemctl start mariadb
 
-- STEP 3: Download FreePBX
+### - STEP 3: Download FreePBX
 
 cd /usr/src
 sudo wget http://mirror.freepbx.org/modules/packages/freepbx/freepbx-16.0-latest.tgz
@@ -149,7 +149,7 @@ OR
 
 sudo systemctl start asterisk
 
-- STEP 6: Check php version and install correct version
+### - STEP 6: Check php version and install correct version
 
 Also, check php version
 
@@ -214,7 +214,7 @@ Now Run FreePBX Install Again
 cd /usr/src/freepbx
 sudo ./install -n
 
-- STEP 7: Fix Permissions and add users
+### - STEP 7: Fix Permissions and add users
 
 sudo rm /var/www/html/index.html
 
@@ -403,7 +403,7 @@ Restart Apache
 
 sudo systemctl restart apache2
 
-- Step 8: Check if AMI is Enabled
+### - Step 8: Check if AMI is Enabled
 
 Exit Asterisk CLI and open:
 
@@ -421,7 +421,7 @@ If enabled = no → change it to yes.
 
 Save and exit.
 
-- Step 9: Restart Asterisk
+### - Step 9: Restart Asterisk
 
 sudo systemctl restart asterisk
 
@@ -431,7 +431,7 @@ telnet 127.0.0.1 5038
 
 It must show connecting…
 
-- STEP 10: Access GUI
+### - STEP 10: Access GUI
 
 Open browser:
 
