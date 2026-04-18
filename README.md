@@ -315,9 +315,9 @@ Add Sudo Rule (VERY IMPORTANT)
 sudo nano /etc/sudoers.d/freepbx
 ```
 Add:
-
+```
 www-data ALL = (asterisk) NOPASSWD: ALL
-
+```
 Then:
 ```
 sudo chmod 440 /etc/sudoers.d/freepbx
@@ -340,10 +340,10 @@ Open sudoers safely:
 sudo visudo
 ```
 Add this line at the bottom:
-
+```
 asterisk ALL=(ALL) NOPASSWD: ALL
 www-data ALL=(ALL) NOPASSWD: ALL
-
+```
 Save and exit.
 
 Restart Everything Cleanly
@@ -388,15 +388,15 @@ Open:
 sudo nano /etc/apache2/envvars
 ```
 Find:
-
+```
 export APACHE_RUN_USER=www-data
 export APACHE_RUN_GROUP=www-data
-
+```
 Change to:
-
+```
 export APACHE_RUN_USER=asterisk
 export APACHE_RUN_GROUP=asterisk
-
+```
 Save.
 
 Restart Apache
